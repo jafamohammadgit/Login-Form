@@ -1,0 +1,216 @@
+@import url(./_grid.css);
+@font-face {
+  font-family: "mikhak";
+  src: url(/assets/font/Mikhak/Mikhak-Articgroup-ir/mikhak/Mikhak-Black.ttf)
+      format(ttf),
+    url(/assets/font/Mikhak/Mikhak-Articgroup-ir/mikhak/Mikhak-Bold.ttf)
+      format(ttf),
+    url(/assets/font/Mikhak/Mikhak-Articgroup-ir/mikhak/Mikhak-Light.ttf)
+      format(ttf),
+    url(/assets/font/Mikhak/Mikhak-Articgroup-ir/mikhak/Mikhak-Medium.ttf)
+      format(ttf),
+    url(/assets/font/Mikhak/Mikhak-Articgroup-ir/mikhak/Mikhak-Thin.ttf)
+      format(ttf),
+    url(/assets/font/Mikhak/Mikhak-Articgroup-ir/mikhak/Mikhak-VF.ttf)
+      format(ttf);
+}
+body {
+  z-index: 400;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/v915-wit-002.jpg);
+  opacity: 1;
+}
+
+.container {
+  max-width: 1200px;
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-form {
+  width: 800px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 3px 0px rgb(53 51 51 / 23%);
+  height: 400px;
+  background-color: #fff;
+}
+.login-form .left-login-side figure {
+  width: 100%;
+  height: 100%;
+}
+.login-form .left-login-side figure img {
+  position: absolute;
+}
+
+.login-form .right-login-side {
+  width: 100%;
+  height: 100%;
+}
+.right-login-side p {
+  padding: 10px 63px 10px 0;
+  font-weight: bold;
+  font-size: 22px;
+  color: #737373;
+  margin-top: 10px;
+  border-bottom: 1px solid #efefef;
+  text-align: right;
+  border-right: 2px solid #0e61ff;
+}
+.input-group {
+  padding: 0px 60px;
+  margin-top: -10px;
+}
+.input-group .inputs {
+  display: flex;
+  flex-direction: column;
+}
+.inputs {
+  margin: 50px 0;
+}
+.inputs label {
+  margin: -20px 0 0 0;
+  position: absolute;
+  padding-right: 10px;
+  transition: 0.5s ease;
+  width: 100% !important;
+  color: #4c49497d;
+  font-size: 13px;
+  font-weight: 400;
+}
+.input-group label:hover {
+  cursor: auto;
+}
+.inputs input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #d8d6d6;
+  padding: 4px 9px;
+  border-radius: 4px;
+  margin-bottom: -20px;
+}
+#remember-me {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+#remember-me span {
+  color: rgba(0, 128, 0, 0.493);
+  margin-right: 10px;
+}
+input[type="checkbox"]:checked ~ span {
+  color: rgb(0, 128, 0) !important;
+}
+.inputs span {
+  border-bottom: 1px solid red;
+  position: relative;
+  height: 1px;
+  width: 0;
+  bottom: -20px;
+  right: 0;
+  transition: width 1s linear;
+}
+.inputs input:focus:invalid ~ span {
+  width: 100%;
+  transition: 0.5s;
+}
+.inputs input:valid ~ span {
+  border-bottom-color: green;
+  width: 100%;
+  transition: 0.75s;
+}
+
+.inputs input:placeholder-shown ~ label {
+  margin: 7px 0 0 0;
+  transition: 0.5s ease;
+  color: #666464;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 20px;
+}
+.social-login button {
+  padding: 5px 20px;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 0px 2px 0px rgb(32, 32, 32);
+  border-radius: 29px;
+  transition: 0.5s ease;
+  font-weight: bold;
+  color: rgb(39, 39, 39);
+}
+.social-login button:hover {
+  transform: 0.5s ease;
+  padding: 5px 50px;
+  cursor: pointer;
+  background-color: #343232;
+  color: #fff;
+}
+.social-login div {
+  background-color: #efefef;
+  padding: 5px 10px;
+  border-radius: 100%;
+  transition: 0.5s;
+}
+.social-login div:nth-child(1):hover {
+  background-color: #343232;
+  transition: 0.5s;
+}
+.social-login div:nth-child(1):hover .fa-github-alt {
+  color: #efefef;
+  transition: 0.5s;
+}
+.social-login div:nth-child(3):hover {
+  background-color: rgb(0, 89, 255);
+  transition: 0.5s;
+}
+.social-login div:nth-child(3):hover .fa-google {
+  color: #efefef;
+  transition: 0.5s;
+}
+.social-login > div i {
+  font-size: 15px;
+}
+
+.fa-github-alt {
+  color: #343232;
+}
+.fa-google {
+  color: rgb(0, 89, 255);
+}
+
+.input-group > .other {
+  margin-top: 15px;
+}
+.input-group > .other a {
+  display: block;
+  color: rgb(0, 89, 255);
+  font-size: 13px;
+  transition: 0.2s;
+  padding-right: 3px;
+}
+.input-group > .other a:hover {
+  transition: 0.5s;
+  color: green;
+  border-right: 1px solid blue;
+  padding-right: 13px;
+}
+
+@media only screen and (max-width: 690px) {
+  .login-form {
+    justify-content: right;
+  }
+  .login-form .left-login-side img {
+    display: none;
+  }
+}

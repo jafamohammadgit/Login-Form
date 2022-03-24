@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>form1</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" class="login-form">
+            <div class="right-login-side">
+                <p>ورود</p>
+                <div class="input-group">
+                    <div class="inputs">
+                        <input class="username" type="text" id="username" name="" placeholder=" " minlength="5" required
+                            autofocus oninvalid="this.setCustomValidity('نام کاربری باید حداقل شامل 5 کارکتر باشد.');">
+                        <span></span>
+                        <label for="username">نام کاربری خودرا وارد کنید:</label>
+                    </div>
+                    <div class="inputs">
+                        <input class="password" type="password" id="password" name="" placeholder=" " required
+                            minlength="8" pattern="^[a-z0-9_-]}$">
+                        <label for="password">کلمه عبور را وارد کنید:</label>
+                        <span></span>
+
+                    </div>
+                    <div id="remember-me"><input type="checkbox" name=""><span>Remember me</span>
+                    </div>
+                    <div class="social-login">
+                        <div><a href="http://"><i class="fab fa-github-alt"></i></a></div>
+                        <button type="submit">ثبت</button>
+                        <div><a href="http://"><i class="fab fa-google"></i></a></div>
+                    </div>
+                    <div class="other">
+                        <a href="#">ثبت نام</a>
+                        <a href="#">فراموشی رمز عبور</a>
+
+                    </div>
+                </div>
+            </div>
+            <figure class="left-login-side">
+                <img class="img-responsive" src="./assets/img/my-image.jpg" alt="">
+            </figure>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
